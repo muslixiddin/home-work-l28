@@ -1,0 +1,108 @@
+.header{
+
+    
+        .navbar{
+            display: flex;
+            align-items: center;
+            
+           
+            justify-content: space-between;
+            .nav_right{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            .nav_links{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                cursor: pointer;
+                color: #ccc;
+            }
+            .header_btns{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .hamburger_menu{
+                    display: none;
+                }
+                .SingIn{
+                   
+                    padding: 10px 23px;
+                    background-color: transparent;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                .SingUp{
+                    padding: 10px 23px;
+                    background-color: rgba(2, 137, 122, 1);
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+            .btn_user{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+      
+    
+ 
+}
+
+
+@media (max-width: 1220px) {
+    .header{
+        .navbar{
+            padding: 0 70px;
+        }
+    }
+}
+@media (max-width: 1060px) {
+    .header{
+        .navbar{
+            padding: 0 40px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header{
+        .navbar{
+            padding: 0 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header{
+        .navbar{
+           .nav_right{
+            .nav_links{
+                display: none;
+            }
+            .header_btns{
+                .hamburger_menu{
+                    display: block;
+                }
+            }
+           }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .header{
+        .navbar{
+         .nav_right{
+            .header_btns{
+                display: none;
+            }
+         }
+        }
+    }
+}

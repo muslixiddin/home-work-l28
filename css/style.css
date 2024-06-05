@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 85%;
+  padding: 0px 140px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(31, 46, 53);
+}
+
+button {
+  cursor: pointer;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar .nav_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .navbar .nav_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  color: #ccc;
+}
+.header .navbar .header_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .navbar .header_btns .hamburger_menu {
+  display: none;
+}
+.header .navbar .header_btns .SingIn {
+  padding: 10px 23px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.header .navbar .header_btns .SingUp {
+  padding: 10px 23px;
+  background-color: rgb(2, 137, 122);
+  border: none;
+  border-radius: 5px;
+}
+.header .navbar .btn_user img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1220px) {
+  .header .navbar {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 1060px) {
+  .header .navbar {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .header .navbar {
+    padding: 0 0;
+  }
+}
+@media (max-width: 900px) {
+  .header .navbar .nav_right .nav_links {
+    display: none;
+  }
+  .header .navbar .nav_right .header_btns .hamburger_menu {
+    display: block;
+  }
+}
+@media (max-width: 580px) {
+  .header .navbar .nav_right .header_btns {
+    display: none;
+  }
+}
+.latest .latest_title {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+.latest .latest_title-info {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.latest .lastest_boxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  padding: 33px 33px;
+}
+.latest .lastest_boxs .card_box {
+  width: 348px;
+  height: 359px;
+  background-color: #fff;
+}
+.latest .lastest_boxs .card_box .card_box-info {
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 22px 24px;
+}
+.latest .lastest_boxs .card_box .card_box-desc {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+@media (max-width: 768px) {
+  .latest .latest_title {
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .latest .lastest_boxs .card_box {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+  }
+  .latest .lastest_boxs .card_box .card_box-info {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 16px 18px;
+  }
+}
+.contact .contact_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 34px;
+  font-weight: 700;
+}
+.contact .contact_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.contact .contact_icon-box {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .box_map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 66px;
+}
+.contact .box_send {
+  margin-top: 20px;
+  padding-left: 220px;
+  background-color: crimson;
+  width: 868px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .box_send .input_your_name {
+  padding-left: 100px;
+  width: 608px;
+  height: 54px;
+  border-radius: 58px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.contact .box_send .input_your_name input {
+  border: none;
+}
+.contact .box_send .input_your-email {
+  padding-left: 100px;
+  margin-top: 50px;
+  width: 608px;
+  height: 54px;
+  border-radius: 58px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.contact .box_send .input_your-email input {
+  border: none;
+}
+.contact .box_send .teaxt-area {
+  padding-left: 100px;
+  margin-top: 45px;
+  max-width: 768px;
+  height: 193px;
+  padding: 23px, 20px, 23px, 20px;
+  color: #000;
+}
+.contact .box_send .send {
+  padding: 18px 54px;
+  width: 145px;
+  height: 52px;
+  border-radius: 35px;
+  border: none;
+  background-color: rgb(2, 137, 122);
+}
+
+@media (max-width: 1440px) {
+  .box_send .input_your_name {
+    padding-left: 70px;
+    width: 508px;
+    height: 40px;
+    border-radius: 58px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .box_send .input_your_name input {
+    border: none;
+  }
+  .box_send .input_your-email {
+    padding-left: 70px;
+    width: 508px;
+    height: 40px;
+    border-radius: 58px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .box_send .input_your-email input {
+    border: none;
+  }
+  .box_send .teaxt-area {
+    padding-left: 100px;
+    margin-top: 45px;
+    max-width: 768px;
+    height: 193px;
+    padding: 23px, 20px, 23px, 20px;
+    color: #000;
+  }
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.footer .recurse-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .footer_info .footer_input {
+  width: 325px;
+  height: 49px;
+}
+.footer .footer_info .footer_desc {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer .footer_info .footer_btn {
+  width: 131px;
+  height: 39px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(2, 137, 122);
+  color: aqua;
+}

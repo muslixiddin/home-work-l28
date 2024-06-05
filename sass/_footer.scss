@@ -1,0 +1,38 @@
+.footer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    .recurse-links{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .footer_input{
+            width: 325px;
+            height: 49px;
+        }
+        .footer_desc{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .footer_btn{
+            width: 131px;
+            height: 39px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(2, 137, 122, 1);
+            color: aqua;
+        }
+    }
+}
+
+@media  {
+    
+}
